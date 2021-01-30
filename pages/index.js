@@ -4,6 +4,7 @@ import ProductsList from "../components/ProductsList";
 import TopHeader from "../components/TopHeader";
 import { getProducts } from "../utils/api";
 import styled from 'styled-components';
+import ApiStrapiCall from "../components/ApiStrapiCall";
 
 const StyledHomePage = styled.div`
 
@@ -12257,7 +12258,9 @@ const HomePage = ({ products }) => {
         <title>Strapi Next.js E-commerce</title>
         {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/> */}
       </Head>
+
      <MainBanner />
+     {/* <ApiStrapiCall /> */}
       <ProductsList products={products} />
     </StyledHomePage>
   );

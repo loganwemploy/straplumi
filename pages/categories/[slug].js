@@ -8,7 +8,7 @@ const CategoryPage = ({ category }) => {
   if (router.isFallback) {
     return <div>Loading category...</div>;
   }
-
+ 
   return (
     <div>
       <Head>

@@ -8,7 +8,7 @@ const CategoryPage = ({ category }) => {
   if (router.isFallback) {
     return <div>Loading category...</div>;
   }
- 
+
   return (
     <div>
       <Head>
@@ -25,7 +25,7 @@ export async function getStaticProps({ params }) {
   const category = await getCategory(params.slug);
   return { props: { category } };
 }
- 
+
 export async function getStaticPaths() {
   const categories = await getCategories();
   return {
@@ -34,6 +34,6 @@ export async function getStaticPaths() {
         params: { slug: _category.slug },
       };
     }),
-    fallback: true,
+    fallback: true, 
   };
 }

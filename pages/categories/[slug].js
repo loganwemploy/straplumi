@@ -25,7 +25,7 @@ export async function getStaticProps({ params }) {
   const category = await getCategory(params.slug);
   return { props: { category } };
 }
-
+ 
 export async function getStaticPaths() {
   const categories = await getCategories();
   return {

@@ -28,6 +28,6 @@ export async function getProducts() {
 }
 
 export async function getProduct(slug) {
-  const products = await fetchAPI(`/products?slug=${slug}`);
+  const products = await fetchAPI(`http://104.248.115.204/products?slug=${slug}`);
   return products?.[0];
 }

@@ -24,20 +24,20 @@ const CategoryPage = ( ) => {
 
 export default CategoryPage;
 
-export async function getStaticProps({ params }) {
-  const category = await getCategory(params.slug);
-  return { props: { category } };
-}
+// export async function getStaticProps({ params }) {
+//   const category = await getCategory(params.slug);
+//   return { props: { category } };
+// }
 
-export async function getStaticPaths() {
-  const categories = await getCategories();
-  console.log('categories',categories);
-  return {
-    paths: categories.map((_category) => {
-      return {
-        params: { slug: _category.slug },
-      };
-    }),
-    fallback: true, 
-  };
-}
+// export async function getStaticPaths() {
+//   const categories = await getCategories();
+//   console.log('categories',categories);
+//   return {
+//     paths: categories.map((_category) => {
+//       return {
+//         params: { slug: _category.slug },
+//       };
+//     }),
+//     fallback: true, 
+//   };
+// }

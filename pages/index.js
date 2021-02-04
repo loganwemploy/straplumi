@@ -12261,6 +12261,7 @@ const HomePage = ({ products }) => {
 
      <MainBanner />
      {/* <ApiStrapiCall /> */}
+     
       <ProductsList products={products} />
     </StyledHomePage>
   );

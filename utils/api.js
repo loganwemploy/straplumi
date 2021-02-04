@@ -18,7 +18,7 @@ export async function getCategories() {
 }
 
 export async function getCategory(slug) {
-  const categories = await fetchAPI(`http://104.248.115.204/categories?slug=${slug}`);
+  const categories = await fetchAPI(`/categories?slug=${slug}`);
   return categories?.[0];
 }
 

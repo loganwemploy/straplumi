@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import ProductsList from "../../components/ProductsList";
-import { getCategories, getCategory } from "../../utils/api";
+// import { getCategories, getCategory } from "../../utils/api";
 
 const CategoryPage = ( ) => {
 // const CategoryPage = ({ category }) => {
